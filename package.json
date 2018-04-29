@@ -5,10 +5,23 @@
   "main": "index.js",
   "repository": "git@github.com:suguru03/hackerrank.git",
   "license": "MIT",
+  "scripts": {
+    "precommit": "lint-staged"
+  },
   "devDependencies": {
     "aigle": "^1.12.0-alpha.6",
     "gulp": "^3.9.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.5",
+    "prettier": "^1.12.1",
     "prompt": "^1.0.0",
     "require-dir": "^1.0.0"
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": ["prettier --write", "git add"]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
   }
 }
