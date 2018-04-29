@@ -13,6 +13,7 @@
     "gulp": "^3.9.1",
     "husky": "^0.14.3",
     "lint-staged": "^7.0.5",
+    "lodash": "^4.17.10",
     "prettier": "^1.12.1",
     "prompt": "^1.0.0",
     "require-dir": "^1.0.0"

@@ -3,6 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 
+const _ = require('lodash');
 const gulp = require('gulp');
 const Aigle = require('aigle');
 const prompt = require('prompt');
@@ -33,8 +34,12 @@ async function init() {
   const indexpath = path.join(targetDir, 'index.js');
   fs.writeFileSync(indexpath, '');
 
+  const readmepath = path.join(targetDir, 'README.md');
+  fs.writeFileSync(readmepath, `# ${_.startCase(name)}\n`);
+
   const testpath = path.join(targetDir, 'test.js');
   const testfile = `'use strict';
+
 module.exports = [
   {
     input: '',
