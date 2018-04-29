@@ -1,0 +1,14 @@
+{
+  "name": "hackerrank",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "repository": "git@github.com:suguru03/hackerrank.git",
+  "license": "MIT",
+  "devDependencies": {
+    "aigle": "^1.12.0-alpha.6",
+    "gulp": "^3.9.1",
+    "prompt": "^1.0.0",
+    "require-dir": "^1.0.0"
+  }
+}
