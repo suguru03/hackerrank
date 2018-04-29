@@ -14,9 +14,12 @@
     "husky": "^0.14.3",
     "lint-staged": "^7.0.5",
     "lodash": "^4.17.10",
+    "minimist": "^1.2.0",
+    "mocha": "^5.1.1",
     "prettier": "^1.12.1",
     "prompt": "^1.0.0",
-    "require-dir": "^1.0.0"
+    "require-dir": "^1.0.0",
+    "vm-agent": "^0.5.4"
   },
   "lint-staged": {
     "*.{js,json,css,md}": ["prettier --write", "git add"]
