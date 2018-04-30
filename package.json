@@ -6,6 +6,7 @@
   "repository": "git@github.com:suguru03/hackerrank.git",
   "license": "MIT",
   "scripts": {
+    "test": "mocha test",
     "precommit": "lint-staged"
   },
   "devDependencies": {
