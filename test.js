@@ -87,7 +87,7 @@ function createTest({ name, index, test }) {
 
         const result = logs.pop();
         assert.deepEqual(
-          typeof result === 'string' ? result.trim() : result,
+          typeof result === 'string' ? result.trimRight() : result,
           test.result,
         );
       });
